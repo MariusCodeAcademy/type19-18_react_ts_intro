@@ -4,5 +4,5 @@ type HeadingProps = {
 
 export default function Heading(props: HeadingProps) {
   console.log('props ===', props);
-  return <h3>{props.children}</h3>;
+  return <h3 className='fs-3'>{props.children}</h3>;
 }

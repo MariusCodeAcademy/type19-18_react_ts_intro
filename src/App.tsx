@@ -44,6 +44,8 @@ function App() {
       <h2 className='display-2'>React TS App</h2>
       {/* <Heading title={'Sveiki'} /> */}
       <Grid>
+        {/* heading priima probs size kuri gali buti sveikas skaicius nuo 1 iki 6 imtinai */}
+        {/* (extra) jei nepaduotas size tai jis lygus 3 */}
         <Heading>Dar vienas headingas</Heading>
         <Button onClick={printName} sumuok={sum} />
         <Status status='success' />
