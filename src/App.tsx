@@ -48,7 +48,12 @@ function App() {
         {/* (extra) jei nepaduotas size tai jis lygus 3 */}
         <Heading size={1}>Dar vienas headingas</Heading>
         <Heading>Default size</Heading>
-        <Button onClick={printName} sumuok={sum} />
+        <Button
+          onClick={(event, id) => {
+            console.log('event', event.currentTarget, id);
+          }}
+          sumuok={sum}
+        />
         <Status status='success' />
       </Grid>
       {false && (
