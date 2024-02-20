@@ -1,13 +1,15 @@
 type PersonProps = {
-  firstName: string;
-  lastName: string;
+  item: {
+    firstName: string;
+    lastName: string;
+  };
 };
 // Person componentas
 export default function Person(props: PersonProps) {
   return (
     <div>
       <div className='alert alert-danger text-center fs-3'>
-        {props.firstName} {props.lastName}
+        {props.item.firstName} {props.item.lastName}
       </div>
     </div>
   );
