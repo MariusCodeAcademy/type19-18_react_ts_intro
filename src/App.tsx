@@ -2,11 +2,7 @@ import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
-
-type PersonObj = {
-  firstName: string;
-  lastName: string;
-};
+import { PersonObj } from './components/PersonObj.type';
 
 function App() {
   const perObj: PersonObj = {

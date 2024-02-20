@@ -1,8 +1,7 @@
+import { PersonObj } from './PersonObj.type';
+
 type PersonProps = {
-  item: {
-    firstName: string;
-    lastName: string;
-  };
+  item: PersonObj;
 };
 // Person componentas
 export default function Person(props: PersonProps) {

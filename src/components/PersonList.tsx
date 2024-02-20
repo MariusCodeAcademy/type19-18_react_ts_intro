@@ -1,10 +1,8 @@
 import Person from './Person';
+import { PersonObj } from './PersonObj.type';
 
 type PersonListProps = {
-  list: {
-    firstName: string;
-    lastName: string;
-  }[];
+  list: PersonObj[];
 };
 export default function PersonList(props: PersonListProps) {
   return (
