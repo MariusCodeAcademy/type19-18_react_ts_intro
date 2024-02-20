@@ -1,3 +1,4 @@
+import Button from './components/Button';
 import Greet from './components/Greet';
 import Grid from './components/Grid';
 import Heading from './components/Heading';
@@ -29,13 +30,18 @@ function App() {
       lastName: 'Kent',
     },
   ];
+
+  function printName(): void {
+    console.log('Hi My name is James');
+  }
+
   return (
     <div className='container'>
       <h2 className='display-2'>React TS App</h2>
       {/* <Heading title={'Sveiki'} /> */}
       <Grid>
         <Heading>Dar vienas headingas</Heading>
-
+        <Button onClick={printName} />
         <Status status='success' />
       </Grid>
       {false && (
