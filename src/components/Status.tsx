@@ -4,13 +4,26 @@ type StatusProps = {
 
 export default function Status(props: StatusProps) {
   console.log('props ===', props);
+  let message = '';
+  let dynamicClass: string;
+  if (props.status === 'error') {
+    message = 'Error';
+    dynamicClass = 'danger';
+  } else if (props.status === 'loading') {
+    message = 'Loading';
+    dynamicClass = 'info';
+  } else {
+    message = 'Success';
+    dynamicClass = 'success';
+  }
+
   return (
     <div>
-      {/* <div className='alert alert-'clase priklausomai nuo status''>statusas</div> */}
+      <div className={`alert alert-${dynamicClass}`}>{message}</div>
 
-      <div className='alert alert-info'>Loading</div>
-      <div className='alert alert-danger'>Error</div>
-      <div className='alert alert-success'>Success</div>
+      {/* {props.status === 'loading' && <div className='alert alert-info'>Loading</div>}
+      {props.status === 'error' && <div className='alert alert-danger'>Error</div>}
+      {props.status === 'success' && <div className='alert alert-success'>Success</div>} */}
     </div>
   );
 }

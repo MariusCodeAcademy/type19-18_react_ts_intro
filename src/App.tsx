@@ -33,6 +33,7 @@ function App() {
       <h2 className='display-2'>React TS App</h2>
       <Status status='success' />
       <Status status='loading' />
+      <Status status='error' />
       {false && (
         <>
           <Person item={perObj} />
