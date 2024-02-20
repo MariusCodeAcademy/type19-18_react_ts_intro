@@ -4,11 +4,11 @@ type PersonProps = {
   item: PersonObj;
 };
 // Person componentas
-export default function Person(props: PersonProps) {
+export default function Person({ item }: PersonProps) {
   return (
     <div>
       <div className='alert alert-danger text-center fs-3'>
-        {props.item.firstName} {props.item.lastName}
+        {item.firstName} {item.lastName}
       </div>
     </div>
   );
