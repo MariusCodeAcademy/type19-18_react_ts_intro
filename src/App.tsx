@@ -3,6 +3,7 @@ import Heading from './components/Heading';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
 import { PersonObj } from './components/PersonObj.type';
+import Status from './components/Status';
 
 function App() {
   const perObj: PersonObj = {
@@ -30,11 +31,17 @@ function App() {
   return (
     <div className='container'>
       <h2 className='display-2'>React TS App</h2>
-      <Person item={perObj} />
-      <PersonList list={personArr} />
-      <Heading title={'Sveiki'} />
-      <Greet name='James' amount={500_000_000} favColor='tomato' />
-      <Greet name='Mike' amount={10_000_000} />
+      <Status status='success' />
+      <Status status='loading' />
+      {false && (
+        <>
+          <Person item={perObj} />
+          <PersonList list={personArr} />
+          <Heading title={'Sveiki'} />
+          <Greet name='James' amount={500_000_000} favColor='tomato' />
+          <Greet name='Mike' amount={10_000_000} />
+        </>
+      )}
     </div>
   );
 }
