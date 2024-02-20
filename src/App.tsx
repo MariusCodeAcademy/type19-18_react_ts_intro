@@ -7,6 +7,7 @@ import PersonList from './components/PersonList';
 import { PersonObj } from './components/PersonObj.type';
 import Status from './components/Status';
 import LoggedIn from './components/state/LoggedIn';
+import User from './components/state/User';
 
 function App() {
   const perObj: PersonObj = {
@@ -45,7 +46,8 @@ function App() {
       <h2 className='display-2'>React TS App</h2>
       {/* <Heading title={'Sveiki'} /> */}
 
-      <LoggedIn />
+      {false && <LoggedIn />}
+      <User />
 
       {false && (
         <>
