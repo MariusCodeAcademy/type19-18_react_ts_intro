@@ -1,4 +1,5 @@
 import Greet from './components/Greet';
+import Grid from './components/Grid';
 import Heading from './components/Heading';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
@@ -31,14 +32,17 @@ function App() {
   return (
     <div className='container'>
       <h2 className='display-2'>React TS App</h2>
-      <Status status='success' />
-      <Status status='loading' />
-      <Status status='error' />
+      {/* <Heading title={'Sveiki'} /> */}
+      <Grid>
+        <Heading>Dar vienas headingas</Heading>
+
+        <Status status='success' />
+      </Grid>
       {false && (
         <>
           <Person item={perObj} />
           <PersonList list={personArr} />
-          <Heading title={'Sveiki'} />
+
           <Greet name='James' amount={500_000_000} favColor='tomato' />
           <Greet name='Mike' amount={10_000_000} />
         </>
