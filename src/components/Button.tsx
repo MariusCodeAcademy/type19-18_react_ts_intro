@@ -1,5 +1,6 @@
 type ButtonProps = {
   onClick: () => void;
+  sumuok: (a: number, b: number) => number;
 };
 
 export default function Button(props: ButtonProps) {

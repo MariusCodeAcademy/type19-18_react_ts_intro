@@ -35,13 +35,17 @@ function App() {
     console.log('Hi My name is James');
   }
 
+  function sum(x1: number, x2: number): number {
+    return +(x1 + x2).toFixed(2);
+  }
+
   return (
     <div className='container'>
       <h2 className='display-2'>React TS App</h2>
       {/* <Heading title={'Sveiki'} /> */}
       <Grid>
         <Heading>Dar vienas headingas</Heading>
-        <Button onClick={printName} />
+        <Button onClick={printName} sumuok={sum} />
         <Status status='success' />
       </Grid>
       {false && (
