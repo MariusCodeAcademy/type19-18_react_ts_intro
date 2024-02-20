@@ -35,6 +35,8 @@ const User = () => {
           <h2>User email is {user?.email}</h2>
         </div>
       </div>
+
+      <div className='alert alert-info'>You have been logged out</div>
     </div>
   );
 };
