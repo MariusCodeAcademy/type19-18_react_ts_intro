@@ -46,7 +46,8 @@ function App() {
       <Grid>
         {/* heading priima probs size kuri gali buti sveikas skaicius nuo 1 iki 6 imtinai */}
         {/* (extra) jei nepaduotas size tai jis lygus 3 */}
-        <Heading>Dar vienas headingas</Heading>
+        <Heading size={1}>Dar vienas headingas</Heading>
+        <Heading>Default size</Heading>
         <Button onClick={printName} sumuok={sum} />
         <Status status='success' />
       </Grid>
