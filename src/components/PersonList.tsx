@@ -10,7 +10,7 @@ export default function PersonList(props: PersonListProps) {
       <h3>PersonList</h3>
       <ul className='list-group'>
         {props.list.map((pObj) => (
-          <li key={pObj.firstName} className='list-group-item'>
+          <li key={pObj.id} className='list-group-item'>
             <Person item={pObj} />
           </li>
         ))}

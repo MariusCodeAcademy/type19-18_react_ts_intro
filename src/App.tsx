@@ -6,19 +6,23 @@ import { PersonObj } from './components/PersonObj.type';
 
 function App() {
   const perObj: PersonObj = {
+    id: 50,
     firstName: 'Mike',
     lastName: 'Dow',
   };
   const personArr: PersonObj[] = [
     {
+      id: 1,
       firstName: 'James',
       lastName: 'Bond',
     },
     {
+      id: 2,
       firstName: 'Bruce',
       lastName: 'Wayne',
     },
     {
+      id: 3,
       firstName: 'Clark',
       lastName: 'Kent',
     },
